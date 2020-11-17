@@ -154,7 +154,7 @@ i{
 
 .bookcall{
 	width: 100%;
-	height: 50vh;
+	height: 60vh;
 	text-align: center;
 	margin-bottom: 5%;
 	background-color: #606060;
@@ -220,7 +220,6 @@ i{
 /*****************Service offers css ends*************/
 
 /****************** About us Start******************/
-
 .wrapper{
 	width:100%;
 	background-color: #fff;
@@ -251,8 +250,9 @@ i{
 
 .image-section img{
 	max-width: 100%;
-	height: 30vh;
-
+	height: auto;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .content .title h2{
@@ -274,9 +274,15 @@ i{
 	line-height: 1.5;
 }
 
+.image-section h3{
+	text-align: right;
+	font-family: sans-serif !important;
+}
 
-
-
+.image-section h5{
+	text-align: right;
+	font-family: sans-serif !important;
+}
 
 
 /****************** About us End******************
