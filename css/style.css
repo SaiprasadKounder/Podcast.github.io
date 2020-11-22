@@ -1,40 +1,11 @@
-*{ margin: 0; padding: 0; box-sizing: border-box; 
+*{ margin: 0; padding: 0;
 	font-family: 'Poppins', sans-serif;}
 
-html{
-	scroll-behavior: smooth;
-}
-
-a {text-decoration: none; }
-
-a:hover{text-decoration: none; }
-
-li{list-style: none; }
-
-p{
-	font-size: 0.9rem;
-	line-height: 1.6;
-	font-weight: 400;
-	color: #606060;
-}
-
-.extra-div h2,.servicediv h2{
-	font-size: 0.9rem;
-	margin: 20px 0 15px 0;
-	font-weight: bold;
-	line-height: 1.1;
-	word-spacing: 4px;
-}
-
-i{
-	color: #2fccd0;
-}
-
-/************************actual css start***********************/
+	/************************actual css start***********************/
 
 .header{
 	width: 100%;
-	height: 100vh;
+	height:100vh;
 	background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../image/pc4.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -117,11 +88,11 @@ i{
 	color: white;
 }
 
-
 /****************** extra header div css starts**************/
 
 .header-extradiv{
-	width: 100%; height: auto;
+	width: 100%; 
+	height: auto;
 	margin: 100px 0;
 	text-align: center;
 }
@@ -139,22 +110,13 @@ i{
 	transform: translateY(-20px);
 }
 
-.header-extradiv h2{
-	font-size: 25px;
-}
-
-.header-extradiv p{
-	font-size: 17px;
-}
-
-
 /******************extra header div css end**************/
 
-/*****************Service offers css starts*************/
+/*****************bookcall css starts*************/
 
 .bookcall{
 	width: 100%;
-	height: 60vh;
+	height: 80vh;
 	text-align: center;
 	margin-bottom: 5%;
 	background-color: #606060;
@@ -162,6 +124,7 @@ i{
 	background-size: 100% 100%;
 	clip-path: polygon(100% 0%,100% 70%,50% 100%,0% 75%,0% 0%);
 }
+
 .bookcall:before{
 	content: "";
 	position: absolute;
@@ -217,26 +180,20 @@ i{
 	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 }
 
-/*****************Service offers css ends*************/
+/*****************bookcall css ends*************/
 
 /****************** About us Start******************/
-.wrapper{
+
+.about{
 	width:100%;
 	background-color: #fff;
-	min-height: 100vh;
 	overflow: hidden;
 }
 
 .section{
 	width: 90%;
 	display: block;
-	margin: 80px auto;
-}
-
-.left-section{
-	width: 60%;
-	float: left;
-	padding-right: 50px;
+	margin:80px auto;
 }
 
 .content{
@@ -244,15 +201,12 @@ i{
 }
 
 .image-section{
-	float: right;
-	width: 30%;
+	width: 100%;
 }
 
 .image-section img{
 	max-width: 100%;
 	height: auto;
-	vertical-align: middle;
-	text-align: center;
 }
 
 .content .title h2{
@@ -269,23 +223,15 @@ i{
 .content p{
 	padding-top: 15px;
 	color: #1e1e1e;
-	font-size: 17px;
+	font-size: 20px;
+	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.5;
 }
 
-.image-section h3{
-	text-align: right;
-	font-family: sans-serif !important;
-}
-
-.image-section h5{
-	text-align: right;
-	font-family: sans-serif !important;
-}
 
 
-/****************** About us End******************
+/****************** About us End******************/
 
 /*****************foter css start *************/
 
@@ -299,6 +245,7 @@ i{
 
 .footersection h5{
 	color: #fff;
+	text-align: center;
 }
 
 .footersection li a{
@@ -309,43 +256,6 @@ i{
 	align-items: center;
 	color: #fff;
 	text-transform: capitalize;
-
-}
-/*
-.footersection h5{
-	text-transform: uppercase;
-	color: #fff;
-	margin-bottom: 25px;
-	font-size: 1.2rem!important;
-	font-weight: 600;
-	text-shadow: 0 2px 5px rgba(0,0,0,0.4)
-} 
-*/
-.arrow-btn{
-	position: fixed;
-	bottom: 30px;
-	right:50px;
-	z-index: 9;
-}
-
-.arrow-btn a {
-	height: 39px;
-	width: 37px;
-	text-align: center;
-	background: #00abff;
-	display: block;
-	border-radius: 3px;
-	cursor: pointer;
-}
-
-.arrow-btn a span{
-	color: #f2f2f2;
-	line-height: 39px;
-	font-size: 25px;
-}
-
-.arrow-btn a :hover{
-	background: #606060;
 }
 
 .pts{
@@ -357,44 +267,140 @@ i{
 	margin: 1rem 0 3rem 0;
 }
 
-.pts li{
-	margin: 0 3px;
-	
-}
-
-
-
-
-
 /*****************foter css ends*************/
-
 
 /**********media queries***********/
 
-@media(max-width: 768px){
+@media only screen and (min-width:320px){
+
+
+	.header{
+		width: 100%;
+	}
+
+	.header-buttons a{
+		width: 100%;
+	}
+
 	.nav-item{
 		text-align: center;
 	}
 
-	.pricing, .happyclients, .contactus{
-	height: auto;
-	margin: 50px;
+	.header-extradiv{
+		width: 100%;
+	}
+
+	.bookcall{
+		width: 100%;
+		height: 100vh;
+	}
+
+	.about{
+		width: 100%;
+	}
+
+	.footersection{
+		width: 100%;
+	}
 }
 
-.classsecond{
-	transform: translateY(0px);
-	margin: 30px 0;
+
+@media only screen and (min-width:768px){
+
+	.header{
+		width: 100%;
+	}
+
+	.nav-item{
+		text-align: center;
+	}
+
+	.header-extradiv{
+		width: 100%;
+	}
+
+	.bookcall{
+		width: 100%;
+		height:60vh;
+		
+	}
+
+	.about{
+		width: 100%;
+		height: auto;
+		padding-bottom: 70px;
+	}
+
+	.left-section{
+		width: 60%;
+		float: left;
+		padding-right: 50px;
+    }
+
+    .image-section{
+		float: right;
+		width: 30%
+	}
+
+	.image-section img{
+		max-width: 100%;
+	    height: auto;
+	    vertical-align: middle;
+	    text-align: center;
+	}
+
+	.image-section h3{
+		text-align: right;
+	}
+
+	.image-section h5{
+		text-align: right;
+	}
+
+	.footersection{
+		width: 100%;
+	}
+
 }
 
-.contactus p{
-	padding: 0 50px;
-}
+@media only screen and (min-width:1024px){
 
-.footer-div:nth-child(2){
-	text-align: left!important;
-}
+	.header{
+		width: 100%;
+		height:100;
+	}
 
-.footer-div{
-	margin:30px 0;
-}
+	.nav-item{
+		text-align: center;
+	}
+
+	.header-extradiv{
+		width: 100%;
+	}
+
+	.bookcall{
+		width: 100%;
+		height:60vh;
+	}
+
+	.about{
+		width: 100%;
+	}
+
+	.image-section{
+		float: right;
+		width: 30%
+	}
+
+	.image-section img{
+		max-width: 100%;
+	    height: auto;
+	    vertical-align: middle;
+	    text-align: center;
+	}
+
+	.footersection{
+		width: 100%;
+	}
+
 }
